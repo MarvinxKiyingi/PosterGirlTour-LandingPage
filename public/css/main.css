@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,113 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Archivo Black", sans-serif;
+}
+
 #mainBackground {
-  height: 100vh;
+  width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#3b8d99), color-stop(#6b6b83), to(#aa4b6b));
   background: linear-gradient(180deg, #3b8d99, #6b6b83, #aa4b6b);
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground {
+    height: 100vh;
+  }
+}
+
+#mainBackground #infoContainer {
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer {
+    padding: 3rem;
+  }
+}
+
+#mainBackground #infoContainer .logo {
+  width: 100%;
+}
+
+#mainBackground #infoContainer h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 1rem 0rem;
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer h1 {
+    padding: 2rem 0rem;
+    font-size: 2.8rem;
+  }
+}
+
+#mainBackground #infoContainer #colContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+#mainBackground #infoContainer #colContainer p {
+  color: white;
+  font-size: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer #colContainer p {
+    font-size: 1rem;
+  }
+}
+
+#mainBackground #infoContainer .ticketsLink {
+  font-size: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #e96693;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer .ticketsLink {
+    font-size: 1rem;
+  }
+}
+
+#mainBackground #imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainBackground #imgcontainer .product {
+  width: 65%;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #imgcontainer .product {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
