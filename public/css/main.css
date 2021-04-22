@@ -122,28 +122,60 @@ body {
   }
 }
 
-#mainBackground #infoContainer .ticketsLink {
-  font-size: 0.6rem;
+#mainBackground #infoContainer #ticketLinkContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+#mainBackground #infoContainer #ticketLinkContainer .ticketsText {
+  font-size: 0.6rem;
   text-decoration: none;
   color: white;
 }
 
 @media screen and (min-width: 768px) {
-  #mainBackground #infoContainer .ticketsLink {
+  #mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+  #mainBackground #infoContainer #ticketLinkContainer .ticketsText {
     font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #mainBackground #infoContainer .ticketsLink {
+  #mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+  #mainBackground #infoContainer #ticketLinkContainer .ticketsText {
     font-size: 1.2rem;
   }
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+#mainBackground #infoContainer #ticketLinkContainer #typingLine {
+  color: white;
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #typingLine {
+  -webkit-animation: type 0.33s infinite;
+          animation: type 0.33s infinite;
+}
+
+@-webkit-keyframes type {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  to {
+    opacity: 0;
+  }
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #typingLine {
+  color: #e96693;
 }
 
 #mainBackground #imgcontainer {
