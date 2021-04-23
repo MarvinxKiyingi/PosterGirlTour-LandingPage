@@ -7,3 +7,7 @@ I got inspiration from the artist current webpage. Searched the web for her usua
 ## SCSS
 
 I use a Vs-code extention named "live sass compile" to compile my scss
+
+## Live Page
+
+https://marvinxkiyingi.github.io/PosterGirlTour-LandingPage/
