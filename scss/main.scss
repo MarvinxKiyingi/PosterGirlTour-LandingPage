@@ -78,8 +78,8 @@ body {
         @include Tablet {
           font-size: $tbLink;
         }
-        @include Desktop {
-          font-size: $dtLink;
+        @include DesktopXL {
+          font-size: $dtLinkXL;
         }
       }
       #ticketsLink,
@@ -100,8 +100,8 @@ body {
         @include Tablet {
           font-size: $tbLink;
         }
-        @include Desktop {
-          font-size: $dtLink;
+        @include DesktopXL {
+          font-size: $dtLinkXL;
         }
       }
     }

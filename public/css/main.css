@@ -145,7 +145,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   #mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
   #mainBackground #infoContainer #ticketLinkContainer .ticketsText {
     font-size: 1.2rem;
@@ -185,7 +185,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   #mainBackground #infoContainer #ticketLinkContainer #typingLine {
     font-size: 1.2rem;
   }
