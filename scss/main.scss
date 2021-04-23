@@ -67,17 +67,42 @@ body {
         }
       }
     }
-    .ticketsLink {
-      font-size: $mbLink;
+    #ticketLinkContainer {
       display: flex;
       justify-content: center;
-      text-decoration: none;
-      color: white;
-      @include Tablet {
-        font-size: $tbLink;
+      #ticketsLink,
+      .ticketsText {
+        font-size: $mbLink;
+        text-decoration: none;
+        color: white;
+        @include Tablet {
+          font-size: $tbLink;
+        }
+        @include Desktop {
+          font-size: $dtLink;
+        }
       }
-      @include Desktop {
-        font-size: $dtLink;
+      #ticketsLink,
+      #typingLine {
+        color: white;
+      }
+      #typingLine {
+        animation: type 0.33s infinite;
+      }
+      @keyframes type {
+        to {
+          opacity: 0;
+        }
+      }
+      #typingLine {
+        color: #e96693;
+        font-size: 0.5rem;
+        @include Tablet {
+          font-size: $tbLink;
+        }
+        @include Desktop {
+          font-size: $dtLink;
+        }
       }
     }
   }
