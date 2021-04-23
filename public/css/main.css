@@ -224,4 +224,47 @@ body {
        object-fit: contain;
   }
 }
+
+#mainBackground .modalBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#mainBackground .modalBg .modalInfoBox {
+  background-color: white;
+  border: 2px solid black;
+}
+
+#mainBackground .modalBg .modalInfoBox .modalInfoExitConatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#mainBackground .modalBg .modalInfoBox .modalInfoExitConatiner .closeModel {
+  cursor: pointer;
+}
+
+#mainBackground .modalBgActive {
+  visibility: visible;
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */

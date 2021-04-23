@@ -1,6 +1,7 @@
 window.onload = function () {
   console.log('hello from me ');
   TypeAnimation();
+  modalActivation();
 };
 const webPageName = ['WWW.ZARALARSSONOFFICIAL.COM'];
 let i = 0;
@@ -37,4 +38,16 @@ function DeleteNow() {
     Speed = setTimeout(loopDeleting, 200);
   };
   loopDeleting();
+}
+function modalActivation() {
+  let modalActiveBtn = document.querySelector('#ticketsLink');
+  let modal = document.querySelector('.modalBg');
+  let closeModel = document.querySelector('.closeModel');
+
+  modalActiveBtn.addEventListener('click', () => {
+    modal.classList.add('modalBgActive');
+  });
+  closeModel.addEventListener('click', () => {
+    modal.classList.remove('modalBgActive');
+  });
 }

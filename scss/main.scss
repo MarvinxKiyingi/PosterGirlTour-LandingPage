@@ -123,4 +123,32 @@ body {
       }
     }
   }
+  .modalBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    .modalInfoBox {
+      background-color: white;
+      border: 2px solid black;
+      .modalInfoExitConatiner {
+        display: flex;
+        justify-content: end;
+        .closeModel {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .modalBgActive {
+    visibility: visible;
+    opacity: 1;
+  }
 }
