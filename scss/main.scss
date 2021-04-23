@@ -107,16 +107,22 @@ body {
     }
   }
   #imgcontainer {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     width: 100%;
     object-fit: contain;
+    @include Tablet {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
     @include Desktop {
       flex: 1;
     }
     .product {
-      width: 65%;
+      width: 100%;
+      object-fit: contain;
+      @include Tablet {
+        width: 65%;
+      }
       @include Desktop {
         width: 100%;
         object-fit: contain;
