@@ -192,17 +192,22 @@ body {
 }
 
 #mainBackground #imgcontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #imgcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -214,7 +219,15 @@ body {
 }
 
 #mainBackground #imgcontainer .product {
-  width: 65%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #imgcontainer .product {
+    width: 65%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
