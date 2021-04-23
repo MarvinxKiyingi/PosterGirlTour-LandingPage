@@ -1,7 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo Black", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+#mainBackground {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3b8d99), color-stop(#6b6b83), to(#aa4b6b));
+  background: linear-gradient(180deg, #3b8d99, #6b6b83, #aa4b6b);
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground {
+    background: -webkit-gradient(linear, left top, right top, from(#3b8d99), color-stop(#6b6b83), to(#aa4b6b));
+    background: linear-gradient(90deg, #3b8d99, #6b6b83, #aa4b6b);
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+  }
+}
+
+#mainBackground #infoContainer {
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+  }
+}
+
+#mainBackground #infoContainer .logo {
+  width: 100%;
+}
+
+#mainBackground #infoContainer h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #e96693;
+  padding: 1rem 0rem;
+  font-size: 1.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer h1 {
+    padding: 2rem 0rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer h1 {
+    font-size: 3.5rem;
+  }
+}
+
+#mainBackground #infoContainer #colContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer #colContainer {
+    padding-bottom: 2rem;
+  }
+}
+
+#mainBackground #infoContainer #colContainer p {
+  color: white;
+  font-size: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer #colContainer p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer #colContainer p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#mainBackground #infoContainer #ticketLinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+#mainBackground #infoContainer #ticketLinkContainer .ticketsText {
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+  #mainBackground #infoContainer #ticketLinkContainer .ticketsText {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+  #mainBackground #infoContainer #ticketLinkContainer .ticketsText {
+    font-size: 1.2rem;
+  }
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #ticketsLink,
+#mainBackground #infoContainer #ticketLinkContainer #typingLine {
+  color: white;
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #typingLine {
+  -webkit-animation: type 0.33s infinite;
+          animation: type 0.33s infinite;
+}
+
+@-webkit-keyframes type {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  to {
+    opacity: 0;
+  }
+}
+
+#mainBackground #infoContainer #ticketLinkContainer #typingLine {
+  color: #e96693;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer #ticketLinkContainer #typingLine {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer #ticketLinkContainer #typingLine {
+    font-size: 1.2rem;
+  }
+}
+
+#mainBackground #imgcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #imgcontainer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+#mainBackground #imgcontainer .product {
+  width: 65%;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #imgcontainer .product {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+#mainBackground .modalBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.8s;
+  transition: visibility 0s, opacity 0.8s;
+}
+
+#mainBackground .modalBg .modalInfoBox {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground .modalBg .modalInfoBox {
+    width: 60%;
+  }
+}
+
+#mainBackground .modalBg .modalInfoBox .modalExitBtnContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: end;
+  display: -webkit-box;
+  -webkit-box-pack: end;
+}
+
+#mainBackground .modalBg .modalInfoBox .modalExitBtnContainer .closeModel {
+  color: #aa4b6b;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground .modalBg .modalInfoBox .modalExitBtnContainer .closeModel {
+    font-size: 2rem;
+  }
+}
+
+#mainBackground .modalBg .modalInfoBox p {
+  font-size: 1.2rem;
+  color: #3b8d99;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground .modalBg .modalInfoBox p {
+    font-size: 2.2rem;
+    padding: 2rem 0rem;
+  }
+}
+
+#mainBackground .modalBgActive {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
