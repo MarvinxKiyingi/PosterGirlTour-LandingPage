@@ -123,4 +123,57 @@ body {
       }
     }
   }
+  .modalBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.8s;
+    .modalInfoBox {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 80%;
+      @include Desktop {
+        width: 60%;
+      }
+      .modalExitBtnContainer {
+        display: flex;
+        justify-content: end;
+        display: -webkit-box;
+        -webkit-box-pack: end;
+        .closeModel {
+          color: #aa4b6b;
+          cursor: pointer;
+          font-size: 1.2rem;
+          @include Tablet {
+            font-size: 2rem;
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        color: #3b8d99;
+        text-align: center;
+        padding: 1rem 0rem;
+        @include Tablet {
+          font-size: 2.2rem;
+          padding: 2rem 0rem;
+        }
+      }
+    }
+  }
+  .modalBgActive {
+    visibility: visible;
+    opacity: 1;
+  }
 }
