@@ -176,6 +176,19 @@ body {
 
 #mainBackground #infoContainer #ticketLinkContainer #typingLine {
   color: #e96693;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #mainBackground #infoContainer #ticketLinkContainer #typingLine {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainBackground #infoContainer #ticketLinkContainer #typingLine {
+    font-size: 1.2rem;
+  }
 }
 
 #mainBackground #imgcontainer {

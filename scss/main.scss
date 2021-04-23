@@ -96,6 +96,13 @@ body {
       }
       #typingLine {
         color: #e96693;
+        font-size: 0.5rem;
+        @include Tablet {
+          font-size: $tbLink;
+        }
+        @include Desktop {
+          font-size: $dtLink;
+        }
       }
     }
   }
